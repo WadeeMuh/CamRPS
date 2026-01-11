@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = 'UTF-8'>
+    <title>CamRPS</title>
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+    <script src = 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js'></script>
+    <script src = 'https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js'></script>
+    <script src = 'game.js'></script>
+
+    <h1 id = 'title'>CamRPS</h1>
+    <div id = 'webcam-container'></div>
+
+    <div class = 'allow-cam'>Allow Camera Access<br>To Continue</div>
+    <div class = 'allow-cam' id = 'desktop-message'>(Currently Only Available On Desktop)</div>
+
+    <button id = 'play-btn'>Play</button>
+
+    <button id = 'quit-btn'>Back</button>
+
+    <div id = 'tutorial-label'>Tutorial</div>
+
+    <img class = 'examples' id = 'checkmark' src = 'images/checkmark.png'>
+    <img class = 'examples' id = 'crossmark' src = 'images/crossmark.png'>
+
+    <img class = 'examples' id = 'good1' src = 'images/examples/good1.png'>
+    <img class = 'examples' id = 'good2' src = 'images/examples/good2.png'>
+    <img class = 'examples' id = 'good3' src = 'images/examples/good3.png'>
+    <img class = 'examples' id = 'bad1' src = 'images/examples/bad1.png'>
+    <img class = 'examples' id = 'bad2' src = 'images/examples/bad2.png'>
+    <img class = 'examples' id = 'bad3' src = 'images/examples/bad3.png'>
+
+    <div class = 'examples' id = 'tips'>Keep your hand close to the camera and make sure you have good lighting</div>
+
+    <button id = 'play-btn-2'>Play</button>
+
+    <button id = 'mode3-btn' class = 'mode-btn'>Best Out Of 3</button>
+    <button id = 'mode5-btn' class = 'mode-btn'>Best Out Of 5</button>
+    <button id = 'mode-inf-btn' class = 'mode-btn'>∞</button>
+
+
+    <button id = 'start-round-btn'>Start Round</button>
+
+    <div id = 'player-score' class = 'score-display'>0</div>
+    <div id = 'enemy-score' class = 'score-display'>0</div>
+
+    <div id = 'player-side'>You</div>
+    <div id = 'enemy-side'>Enemy</div>
+    <div id = 'side-separator'></div>
+
+    <img id = 'player-choice'></div>
+    <img id = 'enemy-choice' src = 'images/question_mark_img.png'></div>
+
+    <div id = 'countdown'></div>
+    <div id = 'result'></div>
+
+</body>
+</html>
